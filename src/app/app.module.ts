@@ -19,6 +19,7 @@ import { ShoppingCartComponent } from './restaurant-detail/shopping-cart/shoppin
 import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
