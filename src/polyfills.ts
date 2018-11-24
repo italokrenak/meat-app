@@ -21,6 +21,6 @@ import 'zone.js/dist/zone';
 import 'intl'
 import 'intl/locale-data/jsonp/pt-BR.js'
 
-import 'web-animations-js/web-animations.min-js'
+import 'web-animations-js/web-animations.min.js'
 
 
