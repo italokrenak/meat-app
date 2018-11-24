@@ -9,12 +9,15 @@ import { RattingComponent } from "./ratting/ratting.component";
 import { RestaurantsService } from "app/restaurants/restaurants.service";
 import { OrderService } from "app/order/order.service";
 import { ShoppingCartService } from "app/restaurant-detail/shopping-cart/shopping-cart.service";
+import { SnackbarComponent } from "./messages/snackbar/snackbar.component";
+
 
 @NgModule({
     declarations: [
         InputComponent,
         RadioComponent,
-        RattingComponent
+        RattingComponent,
+        SnackbarComponent
     ],
     imports: [
         CommonModule,
@@ -25,6 +28,7 @@ import { ShoppingCartService } from "app/restaurant-detail/shopping-cart/shoppin
         InputComponent,
         RadioComponent,
         RattingComponent,
+        SnackbarComponent,
         CommonModule,
         FormsModule,
         ReactiveFormsModule
