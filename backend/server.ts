@@ -5,6 +5,8 @@ import * as fs from 'fs'
 import * as https from 'https'
 
 import { handleAuthentication } from './auth'
+import { handlerAuthorization } from './authz'
+
 
 const server = jsonServer.create()
 const router = jsonServer.router('db.json')
@@ -17,8 +19,9 @@ server.use(middlewares)
 // You can use the one used by JSON Server
 server.use(jsonServer.bodyParser)
 
-//
+//middleware for login
 server.post('/login', handleAuthentication)
+server.use('/orders', handlerAuthorization)
 
 // Use default router
 server.use(router)
